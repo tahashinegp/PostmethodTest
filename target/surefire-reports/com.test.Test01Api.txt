@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: com.test.Test01Api
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.166 sec <<< FAILURE! - in com.test.Test01Api
+orderedJsontest(com.test.Test01Api)  Time elapsed: 0.166 sec  <<< FAILURE!
+java.lang.AssertionError: 
+1 expectation failed.
+Expected status code <204> but was <500>.
+
+	at com.test.Test01Api.orderedJsontest(Test01Api.java:32)
+
