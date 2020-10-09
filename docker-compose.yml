@@ -1,0 +1,10 @@
+version: '3'
+services:
+  fpm:
+    image: payserarecruitment/qa-task-statements-fpm:latest
+    container_name: paysera_qa_task
+    ports:
+      - "9999:80"
+  db:
+    image: payserarecruitment/qa-task-statements-db:latest
+    container_name: paysera_qa_task_db
