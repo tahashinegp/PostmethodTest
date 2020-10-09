@@ -1,12 +1,12 @@
-FROM UBUNTU:18.04
-RUN apt-get update
-RUN apt-get update && apt-get install -y \
+FROM debian:buster
+RUN apt update && apt upgrade
+RUN  apt install -y \
   default-jre \
   default-jdk \
   git \
   maven 
 
 RUN mvn -version
-RUN git clone https://github.com/Devops-POC/Rest-Assured.git
+RUN git clone https://github.com/tahashinegp/PostmethodTest.git
 CMD ls
 RUN cd PostmethodTest && mvn test
